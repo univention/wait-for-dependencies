@@ -12,9 +12,9 @@ RUN apt-get update \
       ca-certificates=* \
       curl=7.88.* \
       ldap-utils=2.5.* \
-      python3-boto3 \
-      postgresql \
-      netcat \
-      python3 \
-      python3-requests \ 
+      python3-boto3=1.20.* \
+      postgresql-client=14 \
+      netcat=1.* \
+      python3=3.10.* \
+      python3-requests=2.25.* \
     && rm -rf /var/lib/apt/lists/* /var/cache/apt/archives/*
