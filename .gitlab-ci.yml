@@ -13,7 +13,6 @@ include:
       - "jobs/lint-commit-messages.yaml"
       - "jobs/semantic-release-env.yaml"
       - "jobs/container-build-souvap.yaml"
-      - "jobs/package-and-publish-helm-charts-souvap.yaml"
       - "jobs/check-debian-updates.yaml"
 
 .build-matrix: &build-matrix
