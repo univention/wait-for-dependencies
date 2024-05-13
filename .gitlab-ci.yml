@@ -1,0 +1,53 @@
+---
+
+# SPDX-FileCopyrightText: 2024 Univention GmbH
+# SPDX-License-Identifier: AGPL-3.0-only
+
+include:
+  - project: "univention/customers/dataport/upx/common-ci"
+    ref: "v1.25.0"
+    file:
+      - "defaults/stages.yaml"
+      - "defaults/souvap-workflow.yaml"
+      - "jobs/lint-pre-commit.yaml"
+      - "jobs/lint-commit-messages.yaml"
+      - "jobs/semantic-release-env.yaml"
+      - "jobs/container-build-souvap.yaml"
+      - "jobs/check-debian-updates.yaml"
+
+.build-matrix: &build-matrix
+  - IMAGE_NAME:
+      - "wait-for-dependency"
+    KANIKO_BUILD_CONTEXT: $CI_PROJECT_DIR
+    DOCKERFILE_PATH: "docker/wait-for-dependency/Dockerfile"
+
+container-build:
+  parallel:
+    matrix: *build-matrix
+
+container-generate-sbom:
+  parallel:
+    matrix: *build-matrix
+
+container-sign:
+  parallel:
+    matrix: *build-matrix
+
+container-security-scan:
+  parallel:
+    matrix: *build-matrix
+
+push-image-souvap:
+  parallel:
+    matrix: *build-matrix
+
+container-sign-souvap:
+  parallel:
+    matrix: *build-matrix
+
+check-debian-updates:
+  parallel:
+    matrix: *build-matrix
+  variables:
+    TARGET_IMAGE: "${CI_REGISTRY_IMAGE}/${IMAGE_NAME}:latest"
+...

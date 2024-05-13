@@ -1,0 +1,67 @@
+---
+
+# SPDX-FileCopyrightText: 2023-2024 Univention GmbH
+# SPDX-License-Identifier: AGPL-3.0-only
+
+# See https://pre-commit.com for more information
+# See https://pre-commit.com/hooks.html for more hooks
+
+exclude: '^.*\.patch|^frontend/src/apis/notifications/.*$'
+
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.5.0
+    hooks:
+      # "Check for added large files"
+      - id: check-added-large-files
+      # "Check for merge conflicts"
+      - id: check-merge-conflict
+      # "Check Yaml"
+      - id: check-yaml
+        args:
+          # Allow custom tags like Gitlab's "!reference" tag.
+          - --unsafe
+        exclude: ^helm/.+/templates/
+      # prettify JSON
+      - id: check-json
+        exclude: "conffiles/.*[.]json$"
+      - id: pretty-format-json
+        exclude: "conffiles/.*[.]json$"
+        args:
+          - --autofix
+          - --no-ensure-ascii
+      # "Fix python encoding pragma"
+      # - id: fix-encoding-pragma
+      # "Trim Trailing Whitespace"
+      - id: trailing-whitespace
+
+  # "Commit messages"
+  - repo: https://github.com/compilerla/conventional-pre-commit
+    rev: v3.0.0
+    hooks:
+      - id: conventional-pre-commit
+        stages: [commit-msg]
+
+  # "Dockerfile linter"
+  - repo: https://gitlab.com/univention/pre-commit-hooks/docker-pre-commit
+    rev: v2.0.0
+    hooks:
+      - id: hadolint-system
+
+  # Disable temporarily because gitlab-api can not be accessed.
+  # "urllib.error.HTTPError: HTTP Error 401: Unauthorized"
+  # ".gitlab-ci.yml linter"
+  # - repo: https://gitlab.com/univention/pre-commit-hooks/gitlab-ci-linter
+  #   rev: v1.0.1
+  #   hooks:
+  #   - id: gitlab-ci-linter
+  #     args:
+  #     - '--server'
+  #     - 'https://git.knut.univention.de'
+
+  - repo: "https://git.knut.univention.de/univention/dist/pre-commit-hooks/addlicense"
+    rev: "v1.0.1"
+    hooks:
+      - id: "addlicense"
+
+...
