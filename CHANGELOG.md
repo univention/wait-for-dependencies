@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.25.0](https://git.knut.univention.de/univention/customers/dataport/upx/container-wait-for-dependencies/compare/v0.24.0...v0.25.0) (2024-05-23)
+
+
+### Features
+
+* push to harbor ([49665fa](https://git.knut.univention.de/univention/customers/dataport/upx/container-wait-for-dependencies/commit/49665faa7ff175049863628e33091806be570898))
+
 ## [0.24.0](https://git.knut.univention.de/univention/customers/dataport/upx/container-wait-for-dependencies/compare/v0.23.0...v0.24.0) (2024-05-17)
 
 
