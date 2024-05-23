@@ -5,14 +5,14 @@
 
 include:
   - project: "univention/customers/dataport/upx/common-ci"
-    ref: "v1.25.0"
+    ref: "v1.30.5"
     file:
       - "defaults/stages.yaml"
-      - "defaults/souvap-workflow.yaml"
+      - "defaults/nubus-workflow.yaml"
       - "jobs/lint-pre-commit.yaml"
       - "jobs/lint-commit-messages.yaml"
       - "jobs/semantic-release-env.yaml"
-      - "jobs/container-build-souvap.yaml"
+      - "jobs/container-build-external.yaml"
       - "jobs/check-debian-updates.yaml"
 
 .build-matrix: &build-matrix
@@ -29,19 +29,11 @@ container-generate-sbom:
   parallel:
     matrix: *build-matrix
 
-container-sign:
+push-image-external:
   parallel:
     matrix: *build-matrix
 
-container-security-scan:
-  parallel:
-    matrix: *build-matrix
-
-push-image-souvap:
-  parallel:
-    matrix: *build-matrix
-
-container-sign-souvap:
+container-sign-external:
   parallel:
     matrix: *build-matrix
 
