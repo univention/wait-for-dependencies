@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.27.0](https://git.knut.univention.de/univention/customers/dataport/upx/container-wait-for-dependencies/compare/v0.26.0...v0.27.0) (2024-12-20)
+
+
+### Features
+
+* upgrade UCS base image to 2024-12-12 ([6b9a6dc](https://git.knut.univention.de/univention/customers/dataport/upx/container-wait-for-dependencies/commit/6b9a6dc27554cca95197ffe41209f976d0eb79ec))
+
 ## [0.26.0](https://git.knut.univention.de/univention/customers/dataport/upx/container-wait-for-dependencies/compare/v0.25.0...v0.26.0) (2024-09-13)
 
 
