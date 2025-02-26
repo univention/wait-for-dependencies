@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.28.0](https://git.knut.univention.de/univention/customers/dataport/upx/container-wait-for-dependencies/compare/v0.27.0...v0.28.0) (2025-02-26)
+
+
+### Features
+
+* Bump ucs-base-image to use released apt sources ([7502c3e](https://git.knut.univention.de/univention/customers/dataport/upx/container-wait-for-dependencies/commit/7502c3e11349e6428afcf2281b508a2ed49cc879))
+
 ## [0.27.0](https://git.knut.univention.de/univention/customers/dataport/upx/container-wait-for-dependencies/compare/v0.26.0...v0.27.0) (2024-12-20)
 
 
