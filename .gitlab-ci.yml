@@ -18,8 +18,8 @@ include:
 .build-matrix: &build-matrix
   - IMAGE_NAME:
       - "wait-for-dependency"
-    KANIKO_BUILD_CONTEXT: $CI_PROJECT_DIR
-    DOCKERFILE_PATH: "docker/wait-for-dependency/Dockerfile"
+    KANIKO_BUILD_CONTEXT: "$CI_PROJECT_DIR/docker/wait-for-dependency/"
+    DOCKERFILE_PATH: "Dockerfile"
 
 container-build:
   parallel:
