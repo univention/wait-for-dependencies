@@ -6,6 +6,7 @@ ARG UCS_BASE_IMAGE_TAG=0.16.1-build-2025-02-20
 
 FROM ${UCS_BASE_IMAGE}:${UCS_BASE_IMAGE_TAG} AS build-base
 
+COPY wait-for-keycloak.py /usr/local/bin/
 
 RUN apt-get update \
     && apt-get --assume-yes --verbose-versions --no-install-recommends install \
