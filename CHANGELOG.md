@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.29.0](https://git.knut.univention.de/univention/customers/dataport/upx/container-wait-for-dependencies/compare/v0.28.0...v0.29.0) (2025-04-22)
+
+
+### Features
+
+* **docker:** Add wait-for-keycloak.py script ([27f072a](https://git.knut.univention.de/univention/customers/dataport/upx/container-wait-for-dependencies/commit/27f072a856e573f1c0de6e82d651e5886d5f0472)), closes [univention/dev/internal/team-nubus#1112](https://git.knut.univention.de/univention/dev/internal/team-nubus/issues/1112)
+
 ## [0.28.0](https://git.knut.univention.de/univention/customers/dataport/upx/container-wait-for-dependencies/compare/v0.27.0...v0.28.0) (2025-02-26)
 
 
