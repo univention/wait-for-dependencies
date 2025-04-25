@@ -11,6 +11,7 @@ keycloak_url = os.environ.get('KEYCLOAK_URL')
 max_retries = 60
 retries = 0
 
+print(f'Checking keycloak availability at: {keycloak_url}')
 while True:
     try:
         response = requests.get(keycloak_url)
