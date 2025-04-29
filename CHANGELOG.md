@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.30.0](https://git.knut.univention.de/univention/customers/dataport/upx/container-wait-for-dependencies/compare/v0.29.0...v0.30.0) (2025-04-29)
+
+
+### Features
+
+* Bump ucs-base-image version ([3780fd2](https://git.knut.univention.de/univention/customers/dataport/upx/container-wait-for-dependencies/commit/3780fd2874c10ef973cc8f7ed426fdf3cef45993)), closes [univention/dev/internal/team-nubus#1155](https://git.knut.univention.de/univention/dev/internal/team-nubus/issues/1155)
+
 ## [0.29.0](https://git.knut.univention.de/univention/customers/dataport/upx/container-wait-for-dependencies/compare/v0.28.0...v0.29.0) (2025-04-22)
 
 
