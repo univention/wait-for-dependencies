@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.31.0](https://git.knut.univention.de/univention/customers/dataport/upx/container-wait-for-dependencies/compare/v0.30.0...v0.31.0) (2025-05-02)
+
+
+### Features
+
+* **docker:** Add wait-for-udm.sh script ([01a8363](https://git.knut.univention.de/univention/customers/dataport/upx/container-wait-for-dependencies/commit/01a8363caee12a864e1c705bf4228699e89f7919)), closes [univention/dev/internal/team-nubus#1112](https://git.knut.univention.de/univention/dev/internal/team-nubus/issues/1112)
+
 ## [0.30.0](https://git.knut.univention.de/univention/customers/dataport/upx/container-wait-for-dependencies/compare/v0.29.0...v0.30.0) (2025-04-29)
 
 
