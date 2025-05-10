@@ -25,7 +25,7 @@ container-build:
   parallel:
     matrix: *build-matrix
 
-container-generate-sbom:
+container-malware-scan:
   parallel:
     matrix: *build-matrix
 
