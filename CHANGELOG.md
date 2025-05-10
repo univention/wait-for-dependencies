@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.31.1](https://git.knut.univention.de/univention/dev/nubus-for-k8s/wait-for-dependencies/compare/v0.31.0...v0.31.1) (2025-05-10)
+
+
+### Bug Fixes
+
+* move addlicense pre-commit hook ([f6404cc](https://git.knut.univention.de/univention/dev/nubus-for-k8s/wait-for-dependencies/commit/f6404cc680f13cb838d8a1b578a3062ab7a2b069))
+* update common-ci to main ([b8bc352](https://git.knut.univention.de/univention/dev/nubus-for-k8s/wait-for-dependencies/commit/b8bc352210a3ddb0ff1d15dd3dd6ff02641e38f0))
+
 ## [0.31.0](https://git.knut.univention.de/univention/customers/dataport/upx/container-wait-for-dependencies/compare/v0.30.0...v0.31.0) (2025-05-02)
 
 
