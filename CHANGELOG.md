@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.32.0](https://git.knut.univention.de/univention/dev/nubus-for-k8s/wait-for-dependencies/compare/v0.31.1...v0.32.0) (2025-05-11)
+
+
+### Features
+
+* move and upgrade ucs-base-image to 0.17.3-build-2025-05-11 ([2b177aa](https://git.knut.univention.de/univention/dev/nubus-for-k8s/wait-for-dependencies/commit/2b177aa4ec3beb5a9c6f6ec9a4470a2a29fc8546))
+
 ## [0.31.1](https://git.knut.univention.de/univention/dev/nubus-for-k8s/wait-for-dependencies/compare/v0.31.0...v0.31.1) (2025-05-10)
 
 
