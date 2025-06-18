@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.32.1](https://git.knut.univention.de/univention/dev/nubus-for-k8s/wait-for-dependencies/compare/v0.32.0...v0.32.1) (2025-06-18)
+
+
+### Bug Fixes
+
+* bump umc-base-image version ([61890c2](https://git.knut.univention.de/univention/dev/nubus-for-k8s/wait-for-dependencies/commit/61890c253abef71caada9b05aac0c2f10dbd99b9)), closes [univention/dev/internal/team-nubus#1263](https://git.knut.univention.de/univention/dev/internal/team-nubus/issues/1263)
+
 ## [0.32.0](https://git.knut.univention.de/univention/dev/nubus-for-k8s/wait-for-dependencies/compare/v0.31.1...v0.32.0) (2025-05-11)
 
 
