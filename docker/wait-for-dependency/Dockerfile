@@ -1,8 +1,8 @@
 # SPDX-License-Identifier: AGPL-3.0-only
 # SPDX-FileCopyrightText: 2023-2024 Univention GmbH
 
-ARG UCS_BASE_IMAGE=gitregistry.knut.univention.de/univention/dev/projects/ucs-base-image/ucs-base-521
-ARG UCS_BASE_IMAGE_TAG=0.17.3-build-2025-05-11
+ARG UCS_BASE_IMAGE=gitregistry.knut.univention.de/univention/dev/projects/ucs-base-image/ucs-base-522
+ARG UCS_BASE_IMAGE_TAG=0.18.2-build-2025-06-12
 
 FROM ${UCS_BASE_IMAGE}:${UCS_BASE_IMAGE_TAG} AS build-base
 
@@ -10,12 +10,12 @@ COPY wait-for-keycloak.py /usr/local/bin/
 COPY wait-for-udm.sh /usr/local/bin/
 
 RUN apt-get update \
-    && apt-get --assume-yes --verbose-versions --no-install-recommends install \
-      ca-certificates=* \
-      curl=7.88.* \
-      ldap-utils=2.5.* \
-      python3-boto3=1.26.* \
-      postgresql-client-15=15.* \
-      python3=3.11.* \
-      python3-requests=2.28.* \
-    && rm -rf /var/lib/apt/lists/* /var/cache/apt/archives/*
+  && apt-get --assume-yes --verbose-versions --no-install-recommends install \
+  ca-certificates=* \
+  curl=7.88.* \
+  ldap-utils=2.5.* \
+  python3-boto3=1.26.* \
+  postgresql-client-15=15.* \
+  python3=3.11.* \
+  python3-requests=2.28.* \
+  && rm -rf /var/lib/apt/lists/* /var/cache/apt/archives/*
