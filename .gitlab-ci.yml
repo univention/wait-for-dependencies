@@ -5,7 +5,7 @@
 
 include:
   - project: "univention/dev/nubus-for-k8s/common-ci"
-    ref: "v1.43.0"
+    ref: "v1.43.3"
     file:
       - "defaults/stages.yaml"
       - "defaults/nubus-workflow.yaml"
@@ -14,6 +14,7 @@ include:
       - "jobs/semantic-release-env.yaml"
       - "jobs/container-build-external.yaml"
       - "jobs/check-debian-updates.yaml"
+      - "templates/sonarqube.yaml"
 
 .build-matrix: &build-matrix
   - IMAGE_NAME:
@@ -42,4 +43,9 @@ check-debian-updates:
     matrix: *build-matrix
   variables:
     TARGET_IMAGE: "${CI_REGISTRY_IMAGE}/${IMAGE_NAME}:latest"
+
+sonarqube:
+  extends: .sonarqube
+  needs: []
+
 ...
