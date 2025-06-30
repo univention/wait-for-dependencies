@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.33.0](https://git.knut.univention.de/univention/dev/nubus-for-k8s/wait-for-dependencies/compare/v0.32.1...v0.33.0) (2025-06-30)
+
+
+### Features
+
+* add wait-for-ldap.sh script ([5789cfd](https://git.knut.univention.de/univention/dev/nubus-for-k8s/wait-for-dependencies/commit/5789cfdeb2410793d6d613fe2c3125c05624eebd)), closes [univention/dev/internal/team-nubus#1303](https://git.knut.univention.de/univention/dev/internal/team-nubus/issues/1303)
+
 ## [0.32.1](https://git.knut.univention.de/univention/dev/nubus-for-k8s/wait-for-dependencies/compare/v0.32.0...v0.32.1) (2025-06-18)
 
 
