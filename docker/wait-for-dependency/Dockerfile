@@ -17,10 +17,10 @@ RUN apt-get update \
     curl=7.88.* \
     ldap-utils=2.5.* \
     postgresql-client-15=15.* \
-    python3=3.11.* \
     python3-boto3=1.26.* \
     python3-requests=2.28.* \
     python3-venv=3.11.* \
+    python3=3.11.* \
   && rm -rf /var/lib/apt/lists/* /var/cache/apt/archives/* \
   && python3 -m venv /opt/nats-venv \
   && /opt/nats-venv/bin/pip install --no-cache-dir nats-py==2.10.0
