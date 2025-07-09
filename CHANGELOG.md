@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.34.0](https://git.knut.univention.de/univention/dev/nubus-for-k8s/wait-for-dependencies/compare/v0.33.0...v0.34.0) (2025-07-09)
+
+
+### Features
+
+* add wait-for-nats.py ([0b3602d](https://git.knut.univention.de/univention/dev/nubus-for-k8s/wait-for-dependencies/commit/0b3602d18b7121804dc7e11e046674a2dff78b3d)), closes [univention/dev/internal/dev-issues/dev-incidents#149](https://git.knut.univention.de/univention/dev/internal/dev-issues/dev-incidents/issues/149)
+
 ## [0.33.0](https://git.knut.univention.de/univention/dev/nubus-for-k8s/wait-for-dependencies/compare/v0.32.1...v0.33.0) (2025-06-30)
 
 
