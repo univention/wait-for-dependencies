@@ -20,8 +20,6 @@ while True:
             sys.exit(0)
         elif response.status_code == 404:
             print('Realm not ready')
-            pass
     except requests.exceptions.ConnectionError:
         print('Could not reach keycloak, retrying...')
-        pass
     time.sleep(1)
