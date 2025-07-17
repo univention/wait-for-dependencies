@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.35.0](https://git.knut.univention.de/univention/dev/nubus-for-k8s/wait-for-dependencies/compare/v0.34.0...v0.35.0) (2025-07-17)
+
+
+### Features
+
+* update ucs-base to 5.2.2-build.20250714 ([846a7ed](https://git.knut.univention.de/univention/dev/nubus-for-k8s/wait-for-dependencies/commit/846a7edbee3704afaf177c67558806a49641c374)), closes [univention/dev/internal/team-nubus#1320](https://git.knut.univention.de/univention/dev/internal/team-nubus/issues/1320)
+
 ## [0.34.0](https://git.knut.univention.de/univention/dev/nubus-for-k8s/wait-for-dependencies/compare/v0.33.0...v0.34.0) (2025-07-09)
 
 
