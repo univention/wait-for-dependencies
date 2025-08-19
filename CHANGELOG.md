@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.35.2](https://git.knut.univention.de/univention/dev/nubus-for-k8s/wait-for-dependencies/compare/v0.35.1...v0.35.2) (2025-08-19)
+
+
+### Bug Fixes
+
+* **deps:** Update dependency univention/dev/nubus-for-k8s/common-ci to v1.44.1 ([8a9942d](https://git.knut.univention.de/univention/dev/nubus-for-k8s/wait-for-dependencies/commit/8a9942d146dd6ed0a167942fcc39d72dc5ee30fc)), closes [#0](https://git.knut.univention.de/univention/dev/nubus-for-k8s/wait-for-dependencies/issues/0)
+
 ## [0.35.1](https://git.knut.univention.de/univention/dev/nubus-for-k8s/wait-for-dependencies/compare/v0.35.0...v0.35.1) (2025-08-19)
 
 
