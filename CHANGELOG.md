@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.35.1](https://git.knut.univention.de/univention/dev/nubus-for-k8s/wait-for-dependencies/compare/v0.35.0...v0.35.1) (2025-08-19)
+
+
+### Bug Fixes
+
+* **deps:** Update gitregistry.knut.univention.de/univention/dev/projects/ucs-base-image/ucs-base Docker tag to v5.2.2-build.20250814 ([04cc295](https://git.knut.univention.de/univention/dev/nubus-for-k8s/wait-for-dependencies/commit/04cc29596d3ada703b8c1bdfcaee1034b714bcf5)), closes [#0](https://git.knut.univention.de/univention/dev/nubus-for-k8s/wait-for-dependencies/issues/0)
+
 ## [0.35.0](https://git.knut.univention.de/univention/dev/nubus-for-k8s/wait-for-dependencies/compare/v0.34.0...v0.35.0) (2025-07-17)
 
 
