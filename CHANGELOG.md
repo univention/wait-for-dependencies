@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.35.33](https://git.knut.univention.de/univention/dev/nubus-for-k8s/wait-for-dependencies/compare/v0.35.32...v0.35.33) (2025-12-02)
+
+
+### Bug Fixes
+
+* bump image to errata 298 ([9bf9380](https://git.knut.univention.de/univention/dev/nubus-for-k8s/wait-for-dependencies/commit/9bf9380255fa67226079323e7c426cc1f56e1391)), closes [univention/dev/internal/team-nubus#1543](https://git.knut.univention.de/univention/dev/internal/team-nubus/issues/1543)
+
 ## [0.35.32](https://git.knut.univention.de/univention/dev/nubus-for-k8s/wait-for-dependencies/compare/v0.35.31...v0.35.32) (2025-11-29)
 
 
