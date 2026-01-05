@@ -8,9 +8,11 @@ if [ "${UDM_API_PASSWORD_FILE}" != "" ]; then
   UDM_API_PASSWORD="$(cat ${UDM_API_PASSWORD_FILE})"
 fi
 
-echo "Checking if the UDM REST API can be reached at: ${UDM_API_URL}ldap/base/ ..."
-while ! (set +x; echo "-u ${UDM_API_USERNAME}:${UDM_API_PASSWORD}" | curl -K- -o- --fail --header "Accept: application/json" "${UDM_API_URL}ldap/base/"); do
-  echo "Checking if the UDM REST API can be reached at: ${UDM_API_URL}ldap/base/ ..."
+URL="${UDM_API_URL}${UDM_API_PATH:-ldap/base/}"
+
+echo "Checking if the UDM REST API can be reached at: ${URL} ..."
+while ! (set +x; echo "-u ${UDM_API_USERNAME}:${UDM_API_PASSWORD}" | curl -K- -o- --fail --header "Accept: application/json" "${URL}"); do
+  echo "Checking if the UDM REST API can be reached at: ${URL} ..."
   sleep 2
 done
 
