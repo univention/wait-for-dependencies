@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.36.0](https://git.knut.univention.de/univention/dev/nubus-for-k8s/wait-for-dependencies/compare/v0.35.36...v0.36.0) (2026-01-06)
+
+
+### Features
+
+* **wait-for-udm:** Add optional UDM_API_PATH env var to the script ([78c4e8c](https://git.knut.univention.de/univention/dev/nubus-for-k8s/wait-for-dependencies/commit/78c4e8c5edd1214063bf02deadcf5ed34c9f3913)), closes [univention/dev/internal/team-nubus#1530](https://git.knut.univention.de/univention/dev/internal/team-nubus/issues/1530)
+
 ## [0.35.36](https://git.knut.univention.de/univention/dev/nubus-for-k8s/wait-for-dependencies/compare/v0.35.35...v0.35.36) (2025-12-23)
 
 
