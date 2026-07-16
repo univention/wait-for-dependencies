@@ -12,15 +12,14 @@ include:
       - "jobs/lint-pre-commit.yaml"
       - "jobs/lint-commit-messages.yaml"
       - "jobs/semantic-release-env.yaml"
-      - "jobs/container-build-external.yaml"
+      - "jobs/container-build-external-buildkit.yaml"
       - "jobs/check-debian-updates.yaml"
       - "templates/sonarqube.yaml"
 
 .build-matrix: &build-matrix
   - IMAGE_NAME:
       - "wait-for-dependency"
-    KANIKO_BUILD_CONTEXT: "$CI_PROJECT_DIR/docker/wait-for-dependency/"
-    DOCKERFILE_PATH: "Dockerfile"
+    BUILD_CONTEXT: "$CI_PROJECT_DIR/docker/wait-for-dependency/"
 
 container-build:
   parallel:
