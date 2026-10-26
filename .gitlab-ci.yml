@@ -15,6 +15,7 @@ include:
       - "jobs/container-build-external-buildkit.yaml"
       - "jobs/check-debian-updates.yaml"
       - "templates/sonarqube.yaml"
+  - component: "$CI_SERVER_FQDN/univention/dev/nubus-for-k8s/common-ci/vul-man@v1.69.2"
 
 .build-matrix: &build-matrix
   - IMAGE_NAME:
@@ -38,6 +39,10 @@ container-sign-external:
     matrix: *build-matrix
 
 container-release-attestation:
+  parallel:
+    matrix: *build-matrix
+
+sbom-upload:
   parallel:
     matrix: *build-matrix
 
